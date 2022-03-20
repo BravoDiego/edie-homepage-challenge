@@ -712,11 +712,7 @@ input[type="checkbox"] {
     img[src="src/person3.png"] {
         width: 50%;
     }
-}
 
-
-
-@media (max-width: 400px) {
     #typedev div {
         width: 90%;
     }
