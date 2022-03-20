@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    width: 95%;
+    top: 0;
+}
+
+#navmenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 52px 30px;
+    box-shadow: 0px 3px 10px rgb(233, 233, 233);
+    z-index: 46;
+}
+
+ nav h1 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu div {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 35px;
+    padding: 0px 10px;
+
+
+    display: inline-block;
+    position: relative;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+ 
+#menu div:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+#menu div:hover {
+    color: black;
+}
+
+#menu div:hover::after {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 200px;
+}
+
+#title {
+    width: 45%;
+}
+
+#img {
+    width: 88%;
+    display: flex;
+    border-radius: 18px;
+}
+
+#title p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #2D9CDB;
+
+}
+
+main h1 {
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+
+
+    color: #333333;
+    width: 100%;
+}
+
+#description {
+    width: 35%;
+    position: relative;
+    right: 5%;
+}
+
+main #description p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #4f4f4f;
+}
+
+#mail, #mail2 {
+    background-color: #F2F2F2;
+    width: 350px;
+    padding: 0;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#wantus, #wantus2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #828282;
+}
+
+#mailinput, #mailinput:focus {
+    border: none;
+    outline: none;
+    background-color: #F2F2F2;
+
+
+    width: 75%;
+    height: 58px;
+    color: #535353;
+    padding-left: 24px;
+    border-radius: 12px;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#mailinput::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #BDBDBD;
+    vertical-align: center;
+}
+
+#buttonjoin {
+    background-color: #2D9CDB;
+    color: #F2F2F2;
+
+
+    cursor: pointer;
+    border-radius: 12px;
+
+    height: 50px;
+    width: 100px;
+    margin-right: 4px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+
+
+
+#typedev {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#typedev ion-icon {
+    font-size: 27px;
+    padding: 20px;
+    color: white;
+    margin-top: 46px;
+}
+
+#typedev ion-icon {
+    background-color: #2D9CDB;
+    border-radius: 16px
+}
+
+#typedev ion-icon[name="server"] {
+    background-color: #EB5757;
+}
+
+#typedev ion-icon[name="code"] {
+    background-color: #27AE60;
+    border-radius: 16px
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: black;
+    margin-top: 35px;
+}
+
+.typedev {
+    transition: 0.5s;
+    transform: scale(1);
+    width: 60%;
+    border-radius: 24px;
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.typedev:hover {
+    z-index: 20;
+    transition: 0.5s;
+    transform: scale(1.03);
+    
+box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+}
+
+.buttongetting:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #2D9CDB;
+}
+
+.typedev p {
+    margin-top: 25px;
+    margin-bottom: 30px;  
+}
+
+.buttongetting {
+    transition: 0.5s;
+    cursor: pointer;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #828282;
+    background-color: #E0E0E0;
+
+    border-radius: 12px;
+    padding: 9px 12px 9px 12px; 
+}
+
+#offer {
+    width: 45%;
+    margin-top: 80px;
+}
+
+#good {
+    width: 40%;
+    position: relative;
+    right: 20%;
+    margin-top: 240px;
+}
+
+#imagetotal div h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    margin-bottom: 100px;
+}
+
+#imagetotal div h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #828282;
+    margin-top: 20px;
+}
+
+#imagetotal img {
+    width: 450px;
+    border-radius: 12px;
+}
+
+
+#imagetotal div:hover {
+    transition: 0.5s;
+    transform: scale(1.04);
+    z-index: 5;
+}
+
+
+#imagetotal div {
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+#imagetotal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#imagetotal div:nth-child(2n+1) {
+    position: relative;
+    top: 130px;
+}
+
+#seemore {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #2D9CDB;
+    cursor: pointer;
+    border-radius: 12px;
+
+        width: 40%;
+    position: relative;
+    left: 50%;
+
+
+    padding: 10px 15px 10px 15px;
+}
+
+
+#seemore:hover {
+    transition: 0.5s;
+    color: #F2F2F2;
+    background-color: #2D9CDB;
+}
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    flex-wrap: wrap;
+}
+
+#textname {
+    width: 25%;
+}
+
+
+#team #textname h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #EB5757;
+}
+
+#team #textname h3 {
+    margin-bottom: auto;
+    margin-top: 7px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+#team #textname p {
+    color: #4F4F4F;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+#teamimage {
+    display: flex;
+    align-items: center;
+
+}
+
+#teamimage img {
+    border-radius: 24px;
+    padding: 12px;
+}
+
+#imageteam2 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+img[src="src/person1.png"] {
+    width: 80%;
+}
+
+img[src="src/person2.png"] {
+    width: 90%;
+}
+
+
+#citation {
+    margin-left: 140px;
+    margin-top: 200px;
+}
+
+#citation h1 {
+    width: 80%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+#author {
+    display: flex;
+    margin-top: 45px;
+}
+
+#author img {
+    border-radius: 12px;
+    margin-right: 30px;
+}
+
+#informationauthor h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#informationauthor p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-top: 12px;
+}
+
+#footerbottom {
+    background-color: #100E1D;
+    margin-top: 200px;
+    padding-top: 50px;
+    margin-right: 0;
+}
+
+#footercontent {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menufooter {
+    width: 100px;
+}
+
+#menufooter div {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    display: inline-block;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+ 
+#menufooter div:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+#menufooter div:hover::after {
+    width: 100%;
+}
+
+#contact h1{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    color: #F2F2F2;
+}
+
+
+footer footer{
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+
+
+    color: #BDBDBD;
+    background-color: #100E1D;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding-top: 50px;
+    padding-bottom: 24px;
+}
+
+#lien {
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 700;
+
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #BDBDBD;
+}
+
+#burger {
+    display: none;
+        margin-right: 60px;
+}
+
+
+input {
+    visibility: hidden;
+}
+
+
+@media (max-width: 900px) {
+
+    #imagetotal div:nth-child(2n+1) {
+        position: relative;
+        top: 0px;
+    }
+
+    #team {
+        flex-direction: column-reverse;
+    }
+
+    #textname {
+        width: 60%;
+    }
+
+    #burger {
+        display: block;
+        margin-right: 20px;
+        font-size: 32px;
+     }
+
+    nav label {
+        cursor: pointer;
+    }
+
+    #menu {display: none;}
+}
+
+@media (max-width:775px) {
+    #typedev {
+        flex-direction: column;
+    }
+
+    #title h1, #description h1 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 140%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #offer{
+        width: 70%;
+        font-size: 32px;
+    }
+
+    #good {
+        font-size: 2em;
+        width: 50%;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    #citation h1 {
+        font-size: 32px;
+        width: 95%;
+    }
+}
+
+@media (max-width:625px) {
+    #burger {
+        margin-right: 60px;
+    }
+
+    #footercontent {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contact, #comment, #menufooter {
+        margin-top: 30px;
+    }
+}
+ 
+@media (max-width: 500px) {
+    *{margin: 0;}
+    #inputmail {
+        position: relative;
+        right: 25%;
+    }
+
+    #title h1{
+        font-size: 150%;
+        line-height: 30px;
+    }
+
+    #wantus {
+        font-size: 10px;
+    }
+
+    #imagetotal div {
+        width: 90%;
+    }
+
+    #imagetotal div img{
+        width: 100%;
+    }
+
+    img[src="src/person3.png"] {
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    #typedev div {
+        width: 90%;
+    }
+
+    #title p {
+        font-size: 15px;
+    }
+
+    #seemore {
+        font-size: 15px;
+    }
+
+    #mail {
+        width: 200%;
+    }
+
+    #textname {
+        width: 90%;
+    } 
+    
+    #textname h3 {
+        font-size: 20px;
+    }
+
+    #good, #offer {
+        font-size: 24px;
+        width: 90%;
+        position: relative;
+        left: 10%;
+        line-height: 25px;
+    }
+
+    #description h1, #title h1 {
+        font-size: 18px;
+        line-height: 25px;
+        width: 120%;
+        margin-top: 10px;
+    }
+
+    #description p {
+        font-size: 14px;
+        width: 140%;
+    }
+
+    #citation h1 {
+        margin-top: 80px;
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+    #citation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    #comment {
+        width: 70%;
+    }
+
+    #comment div {
+        width: 100%;
+    }
+}
